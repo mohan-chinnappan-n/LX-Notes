@@ -2,4 +2,4 @@
 
 ![Demo](./demo/SFDC-LX-Linter-2.gif)
 
-based on (https://lightning-linter.herokuapp.com/)
+[Link](https://mohansun-slds-lint.herokuapp.com/) based on (https://lightning-linter.herokuapp.com/)
