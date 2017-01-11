@@ -10,7 +10,7 @@
 
 - Lightning **Modal Dialog** Example
 
-[Modal Dialog])(https://github.com/mohan-chinnappan-n/lightning-modal-dialog)
+[Modal Dialog](https://github.com/mohan-chinnappan-n/lightning-modal-dialog)
 
 - Lightning - Creating **New Opportunity with Account Name pre-populated**
 
