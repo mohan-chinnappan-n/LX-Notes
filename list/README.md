@@ -9,9 +9,11 @@
 [lightning-data-table](https://github.com/mohan-chinnappan-n/lightning-data-table)
 
 ----
+
 - Lightning **Modal Dialog** Example
 
 [Modal Dialog](https://github.com/mohan-chinnappan-n/lightning-modal-dialog)
+
 ----
 
 - Lightning - Creating **New Opportunity with Account Name pre-populated**
@@ -19,6 +21,7 @@
 [Opportunities Creation](https://github.com/mohan-chinnappan-n/lightning-accounts)
 
 ----
+
 - How to use **aura:id** in Lightning to reference Lightning components
 
 [Best Practices](https://github.com/mohan-chinnappan-n/LX-Notes)
