@@ -77,4 +77,7 @@ SF:mchinnappan:~/sfdc/notes/cmp-ref/backup/dataloader:$ cat out/extractAccountCs
 
 - You use Jenkins CI to schedule this Data Loader extract based backup 
 
+## Docs
+
+[Data Loader Guide](https://developer.salesforce.com/docs/atlas.en-us.dataLoader.meta/dataLoader/data_loader.htm)
 
