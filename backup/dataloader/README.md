@@ -1,4 +1,4 @@
-## How to setup and run  SFDC Data Loder
+## How to setup and run  SFDC Data Loader
  - Data Loader GUI
  - Data Loader CLI
 
