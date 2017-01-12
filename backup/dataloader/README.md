@@ -20,7 +20,7 @@ bash dataLoader-gui.sh
 #1. create key; writes the key to conf/encrypt.txt
 bash dataLoader-gen-key.sh
 
-#2. encrypt password + security_token using the key in conf/encrypt.txt ; emits the encrypted password, which is need in step-3 for verification
+#2. encrypt password + security_token using the key in conf/encrypt.txt ; emits the encrypted password, which is needed in step-3 for verification
 bash dataLoader-pwd-encrypt.sh 
 
 #3. verify the encryption of the password with the key
