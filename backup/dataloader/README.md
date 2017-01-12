@@ -73,4 +73,8 @@ SF:mchinnappan:~/sfdc/notes/cmp-ref/backup/dataloader:$ cat out/extractAccountCs
 ```
 
 
+### Scheduling
+
+- You use Jenkins CI to schedule this Data Loader extract based backup to run the schedule needs
+
 
