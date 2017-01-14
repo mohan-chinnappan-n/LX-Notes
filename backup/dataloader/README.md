@@ -82,8 +82,8 @@ SF:mchinnappan:~/sfdc/notes/cmp-ref/backup/dataloader:$ cat out/extractAccountCs
 - [Data Loader Guide](https://developer.salesforce.com/docs/atlas.en-us.dataLoader.meta/dataLoader/data_loader.htm)
 - [Export Data using Data loader](https://help.salesforce.com/articleView?id=exporting_data.htm&type=0&language=en_US)
 - [Need for customer backups](https://help.salesforce.com/articleView?id=000004037&type=1)
-- (Recover or restore lost or deleted records and data)[https://help.salesforce.com/articleView?id=How-to-retrieve-my-records-and-data-that-has-been-lost-or-deleted-1327108681812&type=1&language=en_US]
-- (Workbench)[https://workbench.developerforce.com/login.php]
+- [Recover or restore lost or deleted records and data](https://help.salesforce.com/articleView?id=How-to-retrieve-my-records-and-data-that-has-been-lost-or-deleted-1327108681812&type=1&language=en_US)
+- [Workbench](https://workbench.developerforce.com/login.php)
 
 
 #### Find all Deleted records
