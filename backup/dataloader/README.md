@@ -5,8 +5,8 @@
 ### Run Data Loader GUI
 
 ```bash
-bash dataLoader-gui.sh 
-  
+bash dataLoader-gui.sh
+
 ```
 #### DEMO
 
@@ -16,12 +16,12 @@ bash dataLoader-gui.sh
 
 ### Setup for Data Loader CLI
 
-``` bash 
+``` bash
 #1. create key; writes the key to conf/encrypt.txt
 bash dataLoader-gen-key.sh
 
 #2. encrypt password + security_token using the key in conf/encrypt.txt ; emits the encrypted password, which is needed in step-3 for verification
-bash dataLoader-pwd-encrypt.sh 
+bash dataLoader-pwd-encrypt.sh
 
 #3. verify the encryption of the password with the key
 bash dataLoader-encrypt-verify.sh 6aa32e17b8bbd80444957ff5b0a5b2fa35de1c74fec42826dbbf18dd1c670f2482745c59efac6b81
@@ -33,7 +33,7 @@ bash dataLoader-encrypt-verify.sh 6aa32e17b8bbd80444957ff5b0a5b2fa35de1c74fec428
 
 
 ```
-bash dataLoader-cli.sh 
+bash dataLoader-cli.sh
 2017-01-12 18:04:34,103 INFO  [main] controller.Controller initLog (Controller.java:396) - Using built-in logging configuration, no log-conf.xml in /Users/mchinnappan/sfdc/notes/cmp-ref/backup/dataloader/log-conf.xml
 2017-01-12 18:04:34,108 INFO  [main] controller.Controller initLog (Controller.java:398) - The log has been initialized
 2017-01-12 18:04:34,109 INFO  [main] controller.Controller initConfig (Controller.java:334) - config dir created at /Users/mchinnappan/sfdc/notes/cmp-ref/backup/dataloader/conf
@@ -54,7 +54,7 @@ cat o2017-01-12 18:04:37,871 INFO  [main] process.ProcessRunner run (ProcessRunn
 2017-01-12 18:04:37,876 INFO  [main] action.AbstractAction execute (AbstractAction.java:122) - Loading: extract
 ut2017-01-12 18:04:38,267 INFO  [main] progress.NihilistProgressAdapter setSubTask (NihilistProgressAdapter.java:78) - Processed 14 of 14 total records. Rate: 50,400,000 records per hour. Estimated time to complete: 0 minutes and 0 seconds.  There are 14 successes and 0 errors.
 2017-01-12 18:04:38,267 INFO  [main] progress.NihilistProgressAdapter doneSuccess (NihilistProgressAdapter.java:63) - The operation has fully completed.  There were 14 successful extractions and 0 errors.
-SF:mchinnappan:~/sfdc/notes/cmp-ref/backup/dataloader:$ cat out/extractAccountCsv.csv 
+SF:mchinnappan:~/sfdc/notes/cmp-ref/backup/dataloader:$ cat out/extractAccountCsv.csv
 "ID","NAME"
 "00141000007PhyaAAC","John2 Account"
 "00141000006ypDgAAI","GenePoint"
@@ -75,9 +75,29 @@ SF:mchinnappan:~/sfdc/notes/cmp-ref/backup/dataloader:$ cat out/extractAccountCs
 
 ### Scheduling
 
-- You can use Jenkins CI to schedule this Data Loader to extract based backup 
+- You can use Jenkins CI to schedule this Data Loader to extract based backup
 
 ## Docs
 
 [Data Loader Guide](https://developer.salesforce.com/docs/atlas.en-us.dataLoader.meta/dataLoader/data_loader.htm)
+[Export Data using Data loader](https://help.salesforce.com/articleView?id=exporting_data.htm&type=0&language=en_US)
+[Need for customer backups](https://help.salesforce.com/articleView?id=000004037&type=1)
+(Recover or restore lost or deleted records and data)[https://help.salesforce.com/articleView?id=How-to-retrieve-my-records-and-data-that-has-been-lost-or-deleted-1327108681812&type=1&language=en_US]
+(Workbench)[https://workbench.developerforce.com/login.php]
 
+
+#### Find all Deleted records
+
+```sql
+SELECT Id,Name
+   FROM Account
+   WHERE IsDeleted = true
+```
+
+#### Find records with specific names
+
+```sql
+ SELECT Id,IsDeleted,LastName
+    FROM Account
+    WHERE LastName = 'Account A'
+ ```
